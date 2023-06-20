@@ -24,4 +24,13 @@ public abstract class Canard {
     public void nager(){
         System.out.println("Tous les canards flottent, même les leurres!");
     }
+
+    public void setInstanceComportementVol(IComportementVol cv){
+        comportementVol=cv;
+    }
+
+    public void setInstanceComportementCancan(IComportementCancan cc){
+        comportementCancan=cc;
+    }
+    
 }
