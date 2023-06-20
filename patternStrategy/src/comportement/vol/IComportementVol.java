@@ -1,4 +1,4 @@
-package PatternStrategy.src.comportement.vol;
+package patternStrategy.src.comportement.vol;
 
 public interface IComportementVol {
 

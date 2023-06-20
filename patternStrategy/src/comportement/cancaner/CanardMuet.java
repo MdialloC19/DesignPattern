@@ -1,4 +1,4 @@
-package PatternStrategy.src.comportement.cancan;
+package patternStrategy.src.comportement.cancaner;
 
 public class CanardMuet implements IComportementCancan {
 

@@ -1,7 +1,7 @@
-package PatternStrategy.src;
+package patternStrategy.src.concretClass;
 
-import PatternStrategy.src.comportement.vol.*;
-import PatternStrategy.src.comportement.cancan.*;
+import patternStrategy.src.comportement.cancaner.*;
+import patternStrategy.src.comportement.vol.*;
 
 public abstract class Canard {
    
