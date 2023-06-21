@@ -6,10 +6,16 @@ import patternstrategyz.src.comportements.deplacement.*;
 
 
 public abstract class Personnage {
-    IEspritCombatif combat =new Pacifiste();
-    IDeplacement deplacement= new Marcher();
-    ISoin soin = new AucunSoin();
+    protected   IEspritCombatif espritCombatif =new Pacifiste();
+    protected   IDeplacement deplacement= new Marcher();
+    protected   ISoin soin = new AucunSoin();
 
+    public Personnage(){};
+    public Personnage(IEspritCombatif espritCombatif, ISoin soin, IDeplacement deplacement) {
+            this.espritCombatif = espritCombatif;
+            this.soin = soin;
+            this.deplacement = deplacement;
+    }
     public abstract void afficher();
 
     public void seDeplace(){
@@ -17,7 +23,7 @@ public abstract class Personnage {
     }
 
     public void combattre(){
-        combat.combat();
+        espritCombatif.combat();
     }
 
     public void soigner(){
@@ -25,7 +31,7 @@ public abstract class Personnage {
     }
 
     public void setEspritCombatif(IEspritCombatif EC){
-        this.combat=EC;
+        this.espritCombatif=EC;
     }
 
     public void setDeplacement(IDeplacement dp){
